@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/7DaysOfCode_dia2.css">
+
+    <title>2-DIA #7DaysOfCode</title>
+</head>
+
+<body>
+    <div class="flex-conteiner">
+        <div class="menu">
+            <div class='navigation'>
+                <ul>
+                    <!-- Abrir menu -->
+                    <li class='list active'>
+                        <a href='#'>
+                            <span class='icon'>
+                                <ion-icon name="menu-outline"></ion-icon>
+                            </span>
+                            <span class='title-menu'>MENU</span>
+                        </a>
+                    </li>
+
+                    <!-- /* pagina inicial*/ -->
+                    <li class='list'>
+                        <a href='../HTML/index.html'>
+                            <span class='icon'>
+                                <ion-icon name='home-outline'></ion-icon>
+                            </span>
+                            <span class='title-menu'>HOME</span>
+                        </a>
+                    </li>
+
+                    <!-- /* pagina conversor tempo */ -->
+                    <li class='list'>
+                        <a href='../HTML/7DaysOfCode_dia1.html'>
+                            <span class='icon'>
+                                <ion-icon name="git-compare-outline"></ion-icon>
+                            </span>
+                            <span class='title-menu'>Dia 1 - Operações Booleanas
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class='list'>
+                        <a href='../HTML/7DaysOfCode_dia2.html'>
+                            <span class='icon'>
+                                <ion-icon name="log-in-outline"></ion-icon>
+                            </span>
+                            <span class='title-menu'>Dia 2 - Variáveis</span>
+                        </a>
+                    </li>
+
+                    <li class='list'>
+                        <a href='../HTML/7DaysOfCode_dia3.html'>
+                            <span class='icon'>
+                                <ion-icon name="help-outline"></ion-icon>
+                            </span>
+                            <span class='title-menu'>Dia 3 - Unknowledge</span>
+                        </a>
+                    </li>
+                    <li class='list'>
+                        <a href='../HTML/7DaysOfCode_dia4.html'>
+                            <span class='icon'>
+                                <ion-icon name="help-outline"></ion-icon>
+                            </span>
+                            <span class='title-menu'>Dia 4 - Unknowledge</span>
+                        </a>
+                    </li>
+                    <li class='list'>
+                        <a href='../HTML/7DaysOfCode_dia5.html'>
+                            <span class='icon'>
+                                <ion-icon name="help-outline"></ion-icon>
+                            </span>
+                            <span class='title-menu'>Dia 5 - Unknowledge</span>
+                        </a>
+                    </li>
+                    <li class='list'>
+                        <a href='../HTML/7DaysOfCode_dia6.html'>
+                            <span class='icon'>
+                                <ion-icon name="help-outline"></ion-icon>
+                            </span>
+                            <span class='title-menu'>Dia 6 - Unknowledge</span>
+                        </a>
+                    </li>
+                    <li class='list'>
+                        <a href='../HTML/7DaysOfCode_dia7.html'>
+                            <span class='icon'>
+                                <ion-icon name="help-outline"></ion-icon>
+                            </span>
+                            <span class='title-menu'>Dia 7 - Unknowledge</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contorno">
+            <div class="conteiner-cabecalho">
+                <h1 class="page-title">
+                    #7DaysOfCode - Variáveis
+                </h1>
+                <p class="page-subtitle">
+                    Recrindo uma pagina de login
+                </p>
+                <hr>
+            </div>
+            <div class="login">
+                <label for="fname">- Qual o seu nome?</label>
+                <input type="text" id="name" name="fname">
+                <label for="lname">- Quantos anos você tem?</label>
+                <input type="number" id="age" name="age">
+                <label for="lname">- Qual linguagem de programação você está estudando?</label>
+                <input type="text" id="language" name="language">
+
+
+                <button type="submit" id="logar" onclick="login()">LOGAR</button>
+            </div>
+<br><br>
+            <h1 id="msgErroLogin"></h1>
+            
+            <div class="loggedIn">
+                <div class="loggedIn_menu">
+                    <div class="loggedIn_menu_inicio"><h1 id="usuario"></h1></div>
+                    <div class="loggedIn_menu_meio"></div>
+                    <div class="loggedIn_menu_final">
+                        <button type="submit" id="sair" onclick="sair()">
+                            <span class="icone">
+                                <ion-icon name="log-out-outline"></ion-icon>
+                            </span>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="loggedIn_conteudo">
+                    <h1>Bem Vindo</h1>
+                    <br><br><br>
+                    <p id="texto"></p>
+                    <br><br><br>
+                    <div class="pergunta">
+                        <label for="lname" id="pergunta"></label><br>
+                        <input type="text" id="lname" name="lname">
+
+                        <button type="submit" id="enviar" onclick="">ENVIAR</button>
+                    </div>
+                    <div id="resposta">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+<script src="../JS/7DaysOfCode_dia2.js"></script>
+
+</html>

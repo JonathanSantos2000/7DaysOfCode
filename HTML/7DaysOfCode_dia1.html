@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/7DaysOfCode_dia1.css">
+
+    <title>1-DIA #7DaysOfCode</title>
+</head>
+
+<body>
+    <div class="flex-conteiner">
+        <div class="menu">
+            <div class='navigation'>
+                <ul>
+                    <!-- Abrir menu -->
+                    <li class='list active'>
+                        <a href='#'>
+                            <span class='icon'>
+                                <ion-icon name="menu-outline"></ion-icon>
+                            </span>
+                            <span class='title-menu'>MENU</span>
+                        </a>
+                    </li>
+
+                    <!-- /* pagina inicial*/ -->
+                    <li class='list'>
+                        <a href='../HTML/index.html'>
+                            <span class='icon'>
+                                <ion-icon name='home-outline'></ion-icon>
+                            </span>
+                            <span class='title-menu'>HOME</span>
+                        </a>
+                    </li>
+
+                    <!-- /* pagina conversor tempo */ -->
+                    <li class='list'>
+                        <a href='../HTML/7DaysOfCode_dia1.html'>
+                            <span class='icon'>
+                                <ion-icon name="git-compare-outline"></ion-icon>
+                            </span>
+                            <span class='title-menu'>Dia 1 - Operações Booleanas
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class='list'>
+                        <a href='../HTML/7DaysOfCode_dia2.html'>
+                            <span class='icon'>
+                                <ion-icon name="log-in-outline"></ion-icon>
+                            </span>
+                            <span class='title-menu'>Dia 2 - Variáveis</span>
+                        </a>
+                    </li>
+
+                    <li class='list'>
+                        <a href='../HTML/7DaysOfCode_dia3.html'>
+                            <span class='icon'>
+                                <ion-icon name="help-outline"></ion-icon>
+                            </span>
+                            <span class='title-menu'>Dia 3 - Unknowledge</span>
+                        </a>
+                    </li>
+                    <li class='list'>
+                        <a href='../HTML/7DaysOfCode_dia4.html'>
+                            <span class='icon'>
+                                <ion-icon name="help-outline"></ion-icon>
+                            </span>
+                            <span class='title-menu'>Dia 4 - Unknowledge</span>
+                        </a>
+                    </li>
+                    <li class='list'>
+                        <a href='../HTML/7DaysOfCode_dia5.html'>
+                            <span class='icon'>
+                                <ion-icon name="help-outline"></ion-icon>
+                            </span>
+                            <span class='title-menu'>Dia 5 - Unknowledge</span>
+                        </a>
+                    </li>
+                    <li class='list'>
+                        <a href='../HTML/7DaysOfCode_dia6.html'>
+                            <span class='icon'>
+                                <ion-icon name="help-outline"></ion-icon>
+                            </span>
+                            <span class='title-menu'>Dia 6 - Unknowledge</span>
+                        </a>
+                    </li>
+                    <li class='list'>
+                        <a href='../HTML/7DaysOfCode_dia7.html'>
+                            <span class='icon'>
+                                <ion-icon name="help-outline"></ion-icon>
+                            </span>
+                            <span class='title-menu'>Dia 7 - Unknowledge</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contorno">
+            <div class="conteiner-cabecalho">
+                <h1 class="page-title">
+                    #7DaysOfCode - Operações Booleanas
+                </h1>
+                <p class="page-subtitle">
+                    Compare se os valores das variaveis e seus tipos são iguais
+                </p>
+                <hr>
+            </div>
+
+            <div id="conversor">
+                <input type="text" id="valor1" size="2" placeholder="Insira o valor 1">
+
+                <div class="selectType">
+                    <select name="select" id="tipo1">
+                        <option value="">Tipo 1</option>
+                        <option value="int">Int</option>
+                        <option value="string">String</option>
+                        <option value="float">Float</option>
+                    </select>
+                </div>
+                <br>
+
+                <input type="text" id="valor2" size="2" placeholder="Insira o valor 2">
+
+                <div class="selectType">
+                    <select name="select" id="tipo2">
+                        <option value="">Tipo 2</option>
+                        <option value="int">Int</option>
+                        <option value="string">String</option>
+                        <option value="float">Float</option>
+                    </select>
+                </div>
+                <br>
+
+                <button type="submit" onclick="verificar()">Verificar</button>
+            </div>
+            <div class="exemplo">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tipo 1</th>
+                            <th>Valor1</th>
+                            <th>==</th>
+                            <th>Tipo 2</th>
+                            <th>Valor2</th>
+                            <th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>num</td>
+                            <td>1</td>
+                            <td></td>
+                            <td>string</td>
+                            <td>'1'</td>
+                            <td>As variáveis valor1 e valor2 tem o mesmo valor, mas tipos diferentes</td>
+                        </tr>
+                        <tr>
+                            <td>num</td>
+                            <td>10</td>
+                            <td></td>
+                            <td>string</td>
+                            <td>'ABC'</td>
+                            <td>As variáveis valor1 e valor2 não tem o mesmo valor</td>
+                        </tr>
+                        <tr>
+                            <td>num</td>
+                            <td>30</td>
+                            <td></td>
+                            <td>num</td>
+                            <td>30</td>
+                            <td>As variáveis valor1 e valor2 tem o mesmo valor e tipos iguais.</td>
+                        </tr>
+                        <tr id="resultado"></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+<script src="../JS/7DaysOfCode_dia1.js"></script>
+
+</html>
