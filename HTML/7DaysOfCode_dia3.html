@@ -60,25 +60,25 @@
                     <li class='list'>
                         <a href='../HTML/7DaysOfCode_dia3.html'>
                             <span class='icon'>
-                                <ion-icon name="help-outline"></ion-icon>
+                                <ion-icon name="game-controller-outline"></ion-icon>
                             </span>
-                            <span class='title-menu'>Dia 3 - Unknowledge</span>
+                            <span class='title-menu'>Dia 3 - Jogo de escolhas</span>
                         </a>
                     </li>
                     <li class='list'>
                         <a href='../HTML/7DaysOfCode_dia4.html'>
                             <span class='icon'>
-                                <ion-icon name="help-outline"></ion-icon>
+                                <ion-icon name="game-controller-outline"></ion-icon>
                             </span>
-                            <span class='title-menu'>Dia 4 - Unknowledge</span>
+                            <span class='title-menu'>Dia 4 - O número secreto</span>
                         </a>
                     </li>
                     <li class='list'>
                         <a href='../HTML/7DaysOfCode_dia5.html'>
                             <span class='icon'>
-                                <ion-icon name="help-outline"></ion-icon>
+                                <ion-icon name="cart-outline"></ion-icon>
                             </span>
-                            <span class='title-menu'>Dia 5 - Unknowledge</span>
+                            <span class='title-menu'>Dia 5 - Lista de compras</span>
                         </a>
                     </li>
                     <li class='list'>
@@ -103,17 +103,109 @@
         <div class="contorno">
             <div class="conteiner-cabecalho">
                 <h1 class="page-title">
-                    #7DaysOfCode - 
+                    #7DaysOfCode - Jogo de escolhas
                 </h1>
                 <p class="page-subtitle">
-                    
+                    Crie seu caminho pela programação
                 </p>
                 <hr>
             </div>
+            <div class="game">
+                <div class="pt1_inicio">
+                    <div class="perguntas">
+                        <label for="fname">- Qual o seu nome?</label><br>
+                        <input type="text" id="name" name="fname">
+                    </div>
+                    <button type="submit" id="proximo" onclick="next()">Proximo</button>
+                </div>
+                <div class="pt2_FrOrBa">
+                    <h1 id="contexto_pt1"></h1>
+                    <div class="conteiner">
+                        <div>
+                            <input type="radio" name="area" value="front" id="front" checked="checked">
+                            <label id="labelForm" for="front">Front-End</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="area" value="back" id="back">
+                            <label id="labelForm" for="back">Back-End</label>
+                        </div>
+                    </div>
+                    <button type="submit" id="proximo" onclick="next()">Proximo</button>
+                </div>
+                <div class="pt3">
+                    <h1 id="contexto_pt2"></h1>
+                    <div class="pt3_1_Front">
+                        <br>
+                        <div class="conteiner">
+                            <div>
+                                <input type="radio" name="linguage_front" value="react" id="react" checked="checked">
+                                <label id="labelForm" for="react">React</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="linguage_front" value="vue" id="vue">
+                                <label id="labelForm" for="vue">Vue</label>
+                            </div>
+                        </div>
 
+                    </div>
+                    <div class="pt3_2_Back">
+                        <div class="conteiner">
+                            <div>
+                                <input type="radio" name="linguage_back" value="c" id="c" checked="checked">
+                                <label id="labelForm" for="c"> C#</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="linguage_back" value="java" id="java">
+                                <label id="labelForm" for="java">Java</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" id="proximo" onclick="next()">Proximo</button>
+                </div>
+
+                <div class="pt4_Profissionalizar">
+                    <h1 id="contexto_pt3"></h1>
+                    <br>
+                    <div class="conteiner">
+                        <div>
+                            <input type="radio" name="tipo" value="EspeArea" id="EspeArea" checked="checked">
+                            <label id="labelForm" for="EspeArea">Especializado na área </label>
+                        </div>
+                        <div>
+                            <input type="radio" name="tipo" value="fullstack" id="fullstack">
+                            <label id="labelForm" for="fullstack">Se tornar Fullstack</label>
+                        </div>
+                    </div>
+                    <button type="submit" id="proximo" onclick="next()">Proximo</button>
+                </div>
+                <div class="pt5_perfil">
+                    <div class="menuPerfil">
+                        <h1 id="Usuario"></h1>
+                    </div>
+                    <br>
+                    <div class="conteudoPerfil">
+                        <p id="texto">Opa |nome|.<br><br>
+                            Pela suas respostas seu caminho á seguir na programação é na area de |area| usando
+                            a linguagem: |linguagem|, sendo um proficional com o foco de |especialização|.</p><br>
+                        <br><br>
+                        <div class="perguntas">
+                            <label for="fname">- Existe mais alguma tecnologias nas qual gostaria de se especializar ou
+                                de conhecer?</label><br>
+                            <input type="text" id="mTecnologia" name="mTecnologia">
+                        </div>
+
+                        <button type="submit" id="add" onclick="add()">Add</button>
+                        <br><br>
+                        <h1 id="title-list-Perfil">Lista de tecnologias:</h1>
+                        <ul id="tecnologia">
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 <script src="../JS/7DaysOfCode_dia3.js"></script>
 
