@@ -74,19 +74,11 @@
                         </a>
                     </li>
                     <li class='list'>
-                        <a href='../HTML/7DaysOfCode_dia5.html'>
+                        <a href='../HTML/7DaysOfCode_dia5_dia6.html'>
                             <span class='icon'>
                                 <ion-icon name="cart-outline"></ion-icon>
                             </span>
-                            <span class='title-menu'>Dia 5 - Lista de compras</span>
-                        </a>
-                    </li>
-                    <li class='list'>
-                        <a href='../HTML/7DaysOfCode_dia6.html'>
-                            <span class='icon'>
-                                <ion-icon name="help-outline"></ion-icon>
-                            </span>
-                            <span class='title-menu'>Dia 6 - Unknowledge</span>
+                            <span class='title-menu'>Dia 5 / Dia 6 - Lista de compras</span>
                         </a>
                     </li>
                     <li class='list'>
@@ -106,11 +98,74 @@
                     #7DaysOfCode - Lista de compras
                 </h1>
                 <p class="page-subtitle">
-
+                    Esta com dificuldades em suas idas ao mercado?
+                    Para facilitar a sua ida ao supermercado esse gerador de lista de compras
                 </p>
                 <hr>
             </div>
+            <div class="conteudo">
+                <div class="montarLista">
+                    <div class="novaCategoria">
+                        <label for="nCategoria">- Qual o nome da nova categoria?</label>
+                        <input type="text" id="nCategoria" name="nCategoria">
+                        <button type="submit" id="add" onclick="addCategoria()">Add Categoria</button>
+                    </div>
+                    <hr>
+                    <div class="novoAlimento">
+                        <label for="nAlimento">- Qual o nome do Alimento?</label>
+                        <!-- Select Categoria -->
+                        <input type="text" id="nAlimento" name="nAlimento">
 
+                        <div class="selectType">
+                            <select name="select" id="categoria"></select>
+                        </div>
+
+                        <button type="submit" id="add" onclick="addAlimento()">Add </button>
+                    </div>
+                    <hr>
+                    <div class="mostraLista">
+                        <button type="submit" id="add" onclick="mostrarLista()">Mostra Lista </button>
+                    </div>
+                </div>
+                <div class="lista">
+                    <table id="listaAlimento">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Categotia</th>
+                                <th>valor 1</th>
+                                <th>Valor 2</th>
+                                <th colspan="2">
+                                    <span class='icon'>
+                                        <ion-icon name="build-outline"></ion-icon>
+                                    </span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultado"></tbody>
+                    </table>
+
+                    <div class="voltar">
+                        <button type="submit" id="add" onclick="voltar()">Voltar</button>
+                    </div>
+                </div>
+
+                <div class="editarLista">
+                    <label for="eAlimento">- Qual o nome do Alimento?</label>
+                    <!-- Select Categoria -->
+                    <input type="text" id="eAlimento" name="eAlimento">
+
+                    <div class="selectType">
+                        <select name="select" id="eCategoria"></select>
+                    </div>
+
+                    <button type="submit" id="add" onclick="atualizar()">atualizar</button>
+
+                    <div class="mostraLista">
+                        <button type="submit" id="add" onclick="voltarLista()">Voltar</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

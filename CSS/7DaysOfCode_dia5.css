@@ -1,0 +1,91 @@
+input {
+    margin-bottom: 16px;
+    padding: 6px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.selectType select {
+    width: 100%;
+    height: 30px;
+    margin-right: 20px;
+}
+
+label {
+    color: white;
+    margin: 12px;
+    font-size: 22px;
+}
+
+#add {
+    width: 100%;
+    margin-top: 20px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    height: 30px;
+    background: #f7b733;
+}
+
+.conteudo {
+    color: white;
+    margin-top: 150px;
+    background-color: rgba(11, 204, 180, 0.1);
+    width: 100%;
+    min-height: 50%;
+}
+
+.montarLista {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#configList {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
+
+/* css tabela */
+
+#listaAlimento {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#listaAlimento td, #listaAlimento th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#listaAlimento th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.editarLista {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
