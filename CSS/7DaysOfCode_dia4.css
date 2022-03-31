@@ -48,7 +48,14 @@
     border: 2px solid white;
     display: none;
 }
-
+.facil {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15%;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: none;
+}
 /* UI jogo */
 .UI {
     display: flex;

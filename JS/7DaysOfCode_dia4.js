@@ -130,17 +130,17 @@ function addPonto() {
     }, 1500);
     if (modoDeJogo == "Solo") {
         if (win) {
-            pontosP1++;
+            pontosP1 += vidas;
         }
     } else if (modoDeJogo == "Multiplayer") {
 
         if (jogadorAtual == 1) {
             if (win)
-                pontosP1++;
+                pontosP1 += vidas;
             jogadorAtual = 2;
         } else if (jogadorAtual == 2) {
             if (win)
-                pontosP2++;
+                pontosP2 += vidas;
             jogadorAtual = 1;
         }
 
