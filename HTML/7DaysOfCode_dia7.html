@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/menu.css">
-    <link rel="stylesheet" href="../CSS/7DaysOfCode_dia6.css">
+    <link rel="stylesheet" href="../CSS/7DaysOfCode_dia7.css">
 
     <title>7-DIA #7DaysOfCode</title>
 </head>
@@ -60,41 +60,33 @@
                     <li class='list'>
                         <a href='../HTML/7DaysOfCode_dia3.html'>
                             <span class='icon'>
-                                <ion-icon name="help-outline"></ion-icon>
+                                <ion-icon name="game-controller-outline"></ion-icon>
                             </span>
-                            <span class='title-menu'>Dia 3 - Unknowledge</span>
+                            <span class='title-menu'>Dia 3 - Jogo de escolhas</span>
                         </a>
                     </li>
                     <li class='list'>
                         <a href='../HTML/7DaysOfCode_dia4.html'>
                             <span class='icon'>
-                                <ion-icon name="help-outline"></ion-icon>
+                                <ion-icon name="game-controller-outline"></ion-icon>
                             </span>
-                            <span class='title-menu'>Dia 4 - Unknowledge</span>
+                            <span class='title-menu'>Dia 4 - O número secreto</span>
                         </a>
                     </li>
                     <li class='list'>
-                        <a href='../HTML/7DaysOfCode_dia5.html'>
+                        <a href='../HTML/7DaysOfCode_dia5_dia6.html'>
                             <span class='icon'>
-                                <ion-icon name="help-outline"></ion-icon>
+                                <ion-icon name="cart-outline"></ion-icon>
                             </span>
-                            <span class='title-menu'>Dia 5 - Unknowledge</span>
-                        </a>
-                    </li>
-                    <li class='list'>
-                        <a href='../HTML/7DaysOfCode_dia6.html'>
-                            <span class='icon'>
-                                <ion-icon name="help-outline"></ion-icon>
-                            </span>
-                            <span class='title-menu'>Dia 6 - Unknowledge</span>
+                            <span class='title-menu'>Dia 5 / Dia 6 - Lista de compras</span>
                         </a>
                     </li>
                     <li class='list'>
                         <a href='../HTML/7DaysOfCode_dia7.html'>
                             <span class='icon'>
-                                <ion-icon name="help-outline"></ion-icon>
+                                <ion-icon name="calculator-outline"></ion-icon>
                             </span>
-                            <span class='title-menu'>Dia 7 - Unknowledge</span>
+                            <span class='title-menu'>Dia 7 - Calculadora</span>
                         </a>
                     </li>
                 </ul>
@@ -103,14 +95,58 @@
         <div class="contorno">
             <div class="conteiner-cabecalho">
                 <h1 class="page-title">
-                    #7DaysOfCode -
+                    #7DaysOfCode - Calculadora
                 </h1>
-                <p class="page-subtitle">
-
-                </p>
+                <p class="page-subtitle">Recriando uma calculadora para calculos simples.</p>
                 <hr>
             </div>
-
+            <div class="conteudo">
+                <div class="calculadora">
+                    <div>
+                        <h1>CALCULADORA</h1><br>
+                        <h1>SIMPLES</h1>
+                    </div>
+                    <div>
+                        <p id="resultado"></p>
+                    </div>
+                    <table>
+                        <tr>
+                            <td><button class="botao" onclick="clean()">C</button></td>
+                            <td>
+                                <button class="botao" onclick="back()">
+                                    <ion-icon name="chevron-back-outline"></ion-icon>
+                                </button>
+                            </td>
+                            <td><button class="botao" onclick="insert('/')">/</button></td>
+                            <td><button class="botao" onclick="insert('*')">X</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="botao" onclick="insert('7')">7</button></td>
+                            <td><button class="botao" onclick="insert('8')">8</button></td>
+                            <td><button class="botao" onclick="insert('9')">9</button></td>
+                            <td><button class="botao" onclick="insert('-')">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="botao" onclick="insert('4')">4</button></td>
+                            <td><button class="botao" onclick="insert('5')">5</button></td>
+                            <td><button class="botao" onclick="insert('6')">6</button></td>
+                            <td><button class="botao" onclick="insert('+')">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="botao" onclick="insert('1')">1</button></td>
+                            <td><button class="botao" onclick="insert('2')">2</button></td>
+                            <td><button class="botao" onclick="insert('3')">3</button></td>
+                            <td rowspan="2"><button class="botao" style="height: 116px;" onclick="calcular()">=</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button class="botao" style="width: 406px;" onclick="insert('0')">0</button>
+                            </td>
+                            <td><button class="botao" onclick="insert('.')">.</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

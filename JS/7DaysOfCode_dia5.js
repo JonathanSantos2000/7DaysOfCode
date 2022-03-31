@@ -114,7 +114,6 @@ function atualizar() {
         }
     }
     mostrarLista();
-    document.querySelector(".lista").style.display = "flex";
     document.querySelector(".editarLista").style.display = "none";
 }
 

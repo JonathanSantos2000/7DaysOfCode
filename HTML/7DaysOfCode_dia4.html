@@ -84,9 +84,9 @@
                     <li class='list'>
                         <a href='../HTML/7DaysOfCode_dia7.html'>
                             <span class='icon'>
-                                <ion-icon name="help-outline"></ion-icon>
+                                <ion-icon name="calculator-outline"></ion-icon>
                             </span>
-                            <span class='title-menu'>Dia 7 - Unknowledge</span>
+                            <span class='title-menu'>Dia 7 - Calculadora</span>
                         </a>
                     </li>
                 </ul>
@@ -95,14 +95,75 @@
         <div class="contorno">
             <div class="conteiner-cabecalho">
                 <h1 class="page-title">
-                    #7DaysOfCode - 
+                    #7DaysOfCode - O número secreto
                 </h1>
                 <p class="page-subtitle">
-                    
+                    Descubra o número secreto, você tem 3 chances de acertar o numero. <br>
+                    Digite um número de 0 a 10
                 </p>
                 <hr>
             </div>
+            <div class="game">
+                <!-- telas -->
+                <!-- Menu jogo  -->
+                <div class="menuJogo">
+                    <div class="title_game">
+                        <h1>Como deseja jogar o jogo?</h1>
+                    </div>
 
+                    <div class="botoes">
+                        <button type="submit" id="modoJogo" onclick="modoJogo('m')">Multiplayer</button>
+                        <button type="submit" id="modoJogo" onclick="modoJogo('s')">Solo</button>
+                    </div>
+                </div>
+                <!-- tela Jogador 1 -->
+                <div class="jogador1">
+                    <div>
+                        <label for="nameP1">- Insira o nome do Jogador 1</label><br>
+                        <input type="text" id="nameP1" name="nameP1">
+                    </div>
+                    <div class="botoes">
+                        <button type="submit" id="voltar" onclick="voltar('p1')">Voltar</button>
+                        <button type="submit" id="proximo" class="solo" onclick="proximo('s')">START</button>
+                        <button type="submit" id="proximo" class="mult" onclick="proximo('p')">Proximo</button>
+                    </div>
+                </div>
+                <!-- tela jogador 2 -->
+                <div class="jogador2">
+                    <div>
+                        <label for="nameP2">- Insira o nome do Jogador 2</label><br>
+                        <input type="text" id="nameP2" name="nameP2">
+                    </div>
+                    <div class="botoes">
+                        <button type="submit" id="voltar" onclick="voltar('p2')">Voltar</button>
+                        <button type="submit" id="proximo" onclick="proximo('s')">START</button>
+                    </div>
+
+                </div>
+                <!-- tela jogo  -->
+                <div class="jogo">
+                    <div class="UI">
+                        <div class="np1">
+                            <h1 id="np1"></h1>
+                        </div>
+                        <div class="ntentativas" >
+                            <h1 id="ntentativas"></h1>
+                        </div>
+                        <div class="np2">
+                            <h1 id="np2"></h1>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="valor">- Digite um número de 0 a 10</label><br>
+                        <input type="number" id="valor" name="valor">
+                        <hr>
+                        <h2 class="resultado" id="resultado"></h2>
+                    </div>
+                    <div>
+                        <button type="submit" id="chute" onclick="chutar()">CHUTAR</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
