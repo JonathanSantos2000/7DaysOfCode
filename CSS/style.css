@@ -9,6 +9,7 @@ body {
     display: flex;
     justify-content: left;
     width: 100vw;
+    height: 90vh;
 }
 
 .container {
@@ -24,8 +25,25 @@ body {
     border: 10px solid #099c22;
     border-radius: 5px;
     width: 50%;
+    min-height: 100%;
     margin-left: 25%;
     padding: 2%;
+    padding-bottom: 25px;
+}
+
+.conteudo {
+    margin-top: 10px;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(11, 204, 180, 0.1);
+    height: 100%;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
 }
 
 .page-title {

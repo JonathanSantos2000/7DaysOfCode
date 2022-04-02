@@ -1,10 +1,12 @@
+.perguntas{
+    display: flex;
+    flex-direction: column;
+}
 input {
     margin-bottom: 16px;
     padding: 6px;
     border-radius: 5px;
-    width: 100%;
 }
-
 label {
     color: white;
     margin: 12px;
@@ -19,19 +21,6 @@ label {
     height: 30px;
     background: #f7b733;
 }
-
-
-.game {
-    color: white;
-    margin-top: 150px;
-    justify-content: space-between;
-    background-color: rgba(11, 204, 180, 0.1);
-    width: 100%;
-    min-height: 50%;
-    padding: 10px;
-    padding-bottom: 30px;
-}
-
 .pt1_inicio {
     padding-top: 15%;
     display: flex;
@@ -76,7 +65,7 @@ label {
 .pt5_perfil {
     display: flex;
     flex-direction: column;
-    padding-top: 8%;
+    padding-top: 2%;
     display: none;
 }
 

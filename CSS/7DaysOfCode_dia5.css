@@ -2,7 +2,6 @@ input {
     margin-bottom: 16px;
     padding: 6px;
     border-radius: 5px;
-    width: 100%;
 }
 
 .selectType select {
@@ -26,23 +25,20 @@ label {
     background: #f7b733;
 }
 
-.conteudo {
-    color: white;
-    margin-top: 150px;
-    background-color: rgba(11, 204, 180, 0.1);
-    width: 100%;
-    min-height: 50%;
-}
-
 .montarLista {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
     height: 100%;
-    padding: 10px;
-    padding-bottom: 30px;
-    margin-bottom: 0;
+    padding-bottom: 35px;
+}
+
+.novaCategoria, .novoAlimento {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 35px;
+    border-bottom: 2px solid white;
 }
 
 .lista {

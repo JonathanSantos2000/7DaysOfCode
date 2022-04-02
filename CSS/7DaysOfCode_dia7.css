@@ -1,15 +1,3 @@
-.conteudo {
-    margin-top: 25%;
-    border: 2px solid white;
-    color: white;
-    justify-content: space-between;
-    background-color: rgba(11, 204, 180, 0.1);
-    padding-top: 25px;
-    padding-bottom: 25px;
-    width: 100%;
-    min-height: 50%;
-}
-
 .calculadora {
     display: flex;
     flex-direction: column;

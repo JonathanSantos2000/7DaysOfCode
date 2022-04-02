@@ -102,49 +102,52 @@
                 </p>
                 <hr>
             </div>
-            <div class="login">
-                <label for="fname">- Qual o seu nome?</label>
-                <input type="text" id="name" name="fname">
-                <label for="lname">- Quantos anos você tem?</label>
-                <input type="number" id="age" name="age">
-                <label for="lname">- Qual linguagem de programação você está estudando?</label>
-                <input type="text" id="language" name="language">
+            <div class="conteudo">
+                <div class="login">
+                    <label for="fname">- Qual o seu nome?</label>
+                    <input type="text" id="name" name="fname">
+                    <label for="lname">- Quantos anos você tem?</label>
+                    <input type="number" id="age" name="age">
+                    <label for="lname">- Qual linguagem de programação você está estudando?</label>
+                    <input type="text" id="language" name="language">
 
 
-                <button type="submit" id="logar" onclick="login()">LOGAR</button>
-            </div>
-            <br><br>
-            <h1 id="msgErroLogin"></h1>
+                    <button type="submit" id="logar" onclick="login()">LOGAR</button>
+                </div>
+                <br><br>
+                <h1 id="msgErroLogin"></h1>
 
-            <div class="loggedIn">
-                <div class="loggedIn_menu">
-                    <div class="loggedIn_menu_inicio">
-                        <h1 id="usuario"></h1>
+                <div class="loggedIn">
+                    <div class="loggedIn_menu">
+                        <div class="loggedIn_menu_inicio">
+                            <h1 id="usuario"></h1>
+                        </div>
+                        <div class="loggedIn_menu_meio"></div>
+                        <div class="loggedIn_menu_final">
+                            <button type="submit" id="sair" onclick="sair()">
+                                <span class="icone">
+                                    <ion-icon name="log-out-outline"></ion-icon>
+                                </span>
+                            </button>
+
+                        </div>
                     </div>
-                    <div class="loggedIn_menu_meio"></div>
-                    <div class="loggedIn_menu_final">
-                        <button type="submit" id="sair" onclick="sair()">
-                            <span class="icone">
-                                <ion-icon name="log-out-outline"></ion-icon>
-                            </span>
-                        </button>
+                    <div class="loggedIn_conteudo">
+                        <h1>Bem Vindo</h1>
+                        <br><br><br>
+                        <p id="texto"></p>
+                        <br><br>
+                        <div class="pergunta">
+                            <label for="pergunta" id="pergunta"></label><br>
+                            <input type="number" id="quest" name="pergunta">
 
+                            <button type="submit" id="enviar" onclick="responder()">ENVIAR</button>
+                        </div>
                     </div>
                 </div>
-                <div class="loggedIn_conteudo">
-                    <h1>Bem Vindo</h1>
-                    <br><br><br>
-                    <p id="texto"></p>
-                    <br><br><br>
-                    <div class="pergunta">
-                        <label for="pergunta" id="pergunta"></label><br>
-                        <input type="number" id="quest" name="pergunta">
-
-                        <button type="submit" id="enviar" onclick="responder()">ENVIAR</button>
-                    </div>
-                </div>
+                <h1 id="msgResposta"></h1>
             </div>
-            <h1 id="msgResposta"></h1>
+
         </div>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

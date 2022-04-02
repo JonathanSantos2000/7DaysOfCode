@@ -102,75 +102,77 @@
                 </p>
                 <hr>
             </div>
+            <div class="conteudo">
+                <div id="conversor">
+                    <input type="text" id="valor1" size="2" placeholder="Insira o valor 1">
 
-            <div id="conversor">
-                <input type="text" id="valor1" size="2" placeholder="Insira o valor 1">
+                    <div class="selectType">
+                        <select name="select" id="tipo1">
+                            <option value="">Tipo 1</option>
+                            <option value="int">Int</option>
+                            <option value="string">String</option>
+                            <option value="float">Float</option>
+                        </select>
+                    </div>
+                    <br>
 
-                <div class="selectType">
-                    <select name="select" id="tipo1">
-                        <option value="">Tipo 1</option>
-                        <option value="int">Int</option>
-                        <option value="string">String</option>
-                        <option value="float">Float</option>
-                    </select>
+                    <input type="text" id="valor2" size="2" placeholder="Insira o valor 2">
+
+                    <div class="selectType">
+                        <select name="select" id="tipo2">
+                            <option value="">Tipo 2</option>
+                            <option value="int">Int</option>
+                            <option value="string">String</option>
+                            <option value="float">Float</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <button type="submit" id="verificar" onclick="verificar()">Verificar</button>
                 </div>
-                <br>
-
-                <input type="text" id="valor2" size="2" placeholder="Insira o valor 2">
-
-                <div class="selectType">
-                    <select name="select" id="tipo2">
-                        <option value="">Tipo 2</option>
-                        <option value="int">Int</option>
-                        <option value="string">String</option>
-                        <option value="float">Float</option>
-                    </select>
+                <div class="exemplo">
+                    <table id="listaAlimento">
+                        <thead>
+                            <tr>
+                                <th>Tipo 1</th>
+                                <th>Valor1</th>
+                                <th>==</th>
+                                <th>Tipo 2</th>
+                                <th>Valor2</th>
+                                <th>Resultado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>num</td>
+                                <td>1</td>
+                                <td></td>
+                                <td>string</td>
+                                <td>'1'</td>
+                                <td>As variáveis valor1 e valor2 tem o mesmo valor, mas tipos diferentes</td>
+                            </tr>
+                            <tr>
+                                <td>num</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>string</td>
+                                <td>'ABC'</td>
+                                <td>As variáveis valor1 e valor2 não tem o mesmo valor</td>
+                            </tr>
+                            <tr>
+                                <td>num</td>
+                                <td>30</td>
+                                <td></td>
+                                <td>num</td>
+                                <td>30</td>
+                                <td>As variáveis valor1 e valor2 tem o mesmo valor e tipos iguais.</td>
+                            </tr>
+                            <tr id="resultado"></tr>
+                        </tbody>
+                    </table>
                 </div>
-                <br>
+            </div>
 
-                <button type="submit" onclick="verificar()">Verificar</button>
-            </div>
-            <div class="exemplo">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Tipo 1</th>
-                            <th>Valor1</th>
-                            <th>==</th>
-                            <th>Tipo 2</th>
-                            <th>Valor2</th>
-                            <th>Resultado</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>num</td>
-                            <td>1</td>
-                            <td></td>
-                            <td>string</td>
-                            <td>'1'</td>
-                            <td>As variáveis valor1 e valor2 tem o mesmo valor, mas tipos diferentes</td>
-                        </tr>
-                        <tr>
-                            <td>num</td>
-                            <td>10</td>
-                            <td></td>
-                            <td>string</td>
-                            <td>'ABC'</td>
-                            <td>As variáveis valor1 e valor2 não tem o mesmo valor</td>
-                        </tr>
-                        <tr>
-                            <td>num</td>
-                            <td>30</td>
-                            <td></td>
-                            <td>num</td>
-                            <td>30</td>
-                            <td>As variáveis valor1 e valor2 tem o mesmo valor e tipos iguais.</td>
-                        </tr>
-                        <tr id="resultado"></tr>
-                    </tbody>
-                </table>
-            </div>
         </div>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

@@ -1,12 +1,3 @@
-.game {
-    color: white;
-    margin-top: 150px;
-    justify-content: space-between;
-    background-color: rgba(11, 204, 180, 0.1);
-    width: 100%;
-    min-height: 50%;
-}
-
 /* inicio telas */
 .menuJogo {
     display: flex;
@@ -14,8 +5,7 @@
     padding-top: 15%;
     padding-left: 25px;
     padding-right: 25px;
-    border: 2px solid black;
-    height: 100%;
+    height: 50%;
 }
 
 .jogador1 {
@@ -45,7 +35,6 @@
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
-    border: 2px solid white;
     display: none;
 }
 .facil {

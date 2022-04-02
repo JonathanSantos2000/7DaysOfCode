@@ -104,13 +104,12 @@
                 <hr>
             </div>
             <div class="conteudo">
-                <div class="montarLista">
+                <section class="montarLista">
                     <div class="novaCategoria">
                         <label for="nCategoria">- Qual o nome da nova categoria?</label>
                         <input type="text" id="nCategoria" name="nCategoria">
                         <button type="submit" id="add" onclick="addCategoria()">Add Categoria</button>
                     </div>
-                    <hr>
                     <div class="novoAlimento">
                         <label for="nAlimento">- Qual o nome do Alimento?</label>
                         <!-- Select Categoria -->
@@ -122,12 +121,11 @@
 
                         <button type="submit" id="add" onclick="addAlimento()">Add </button>
                     </div>
-                    <hr>
                     <div class="mostraLista">
                         <button type="submit" id="add" onclick="mostrarLista()">Mostra Lista </button>
                     </div>
-                </div>
-                <div class="lista">
+                </section>
+                <section class="lista">
                     <table id="listaAlimento">
                         <thead>
                             <tr>
@@ -148,9 +146,8 @@
                     <div class="voltar">
                         <button type="submit" id="add" onclick="voltar()">Voltar</button>
                     </div>
-                </div>
-
-                <div class="editarLista">
+                </section>
+                <section class="editarLista">
                     <label for="eAlimento">- Qual o nome do Alimento?</label>
                     <!-- Select Categoria -->
                     <input type="text" id="eAlimento" name="eAlimento">
@@ -164,7 +161,7 @@
                     <div class="mostraLista">
                         <button type="submit" id="add" onclick="voltarLista()">Voltar</button>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

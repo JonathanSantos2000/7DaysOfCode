@@ -55,7 +55,7 @@ function proximo(p) {
             document.querySelector(".jogador2").style.display = "none";
             document.querySelector(".jogador1").style.display = "none";
             document.querySelector(".jogo").style.display = "flex";
-            motarUI();
+            montarUI();
         }
     }
 }
@@ -106,7 +106,7 @@ function chutar() {
     ntentativas.innerHTML = "Tentativas <br>" + vidas;
 }
 
-function motarUI() {
+function montarUI() {
     n1 = nomeP1[0].toUpperCase() + nomeP1.substr(1) + "<br>Pontos: " + pontosP1;
     n2 = nomeP2[0].toUpperCase() + nomeP2.substr(1) + "<br>Pontos: " + pontosP2;
     if (jogadorAtual == 1) {
@@ -147,6 +147,6 @@ function addPonto() {
     }
     win = false;
     vidas = 3;
-    motarUI();
+    montarUI();
     sortearNumero();
 }
