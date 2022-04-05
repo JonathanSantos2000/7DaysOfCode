@@ -46,7 +46,9 @@ function voltar(tela) {
 
 function proximo(p) {
     nomeP1 = document.getElementById('nameP1').value;
-    nomeP2 = document.getElementById('nameP2').value;
+    if (modoDeJogo == "Multiplayer") {
+        nomeP2 = document.getElementById('nameP2').value;
+    }
     if (verificar(nomeP1, nomeP2)) {
         if (p == "p") {
             document.querySelector(".jogador1").style.display = "none";
@@ -55,6 +57,7 @@ function proximo(p) {
             document.querySelector(".jogador2").style.display = "none";
             document.querySelector(".jogador1").style.display = "none";
             document.querySelector(".jogo").style.display = "flex";
+            console.log("opa");
             montarUI();
         }
     }
@@ -108,7 +111,9 @@ function chutar() {
 
 function montarUI() {
     n1 = nomeP1[0].toUpperCase() + nomeP1.substr(1) + "<br>Pontos: " + pontosP1;
-    n2 = nomeP2[0].toUpperCase() + nomeP2.substr(1) + "<br>Pontos: " + pontosP2;
+    if (modoDeJogo == "Multiplayer") {
+        n2 = nomeP2[0].toUpperCase() + nomeP2.substr(1) + "<br>Pontos: " + pontosP2;
+    }
     if (jogadorAtual == 1) {
         np1.innerHTML = "Jogando: <br>" + n1;
     } else {
