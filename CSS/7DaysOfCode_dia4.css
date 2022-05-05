@@ -1,3 +1,11 @@
+.imgFundo {
+    background-color: #f7b733;
+    background-image: url("https://images.vectorhq.com/images/previews/5e0/top-secret-stamp-psd-455017.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
 /* inicio telas */
 .menuJogo {
     display: flex;
@@ -37,6 +45,7 @@
     padding-bottom: 25px;
     display: none;
 }
+
 .facil {
     display: flex;
     flex-direction: column;
@@ -45,6 +54,7 @@
     padding-right: 25px;
     display: none;
 }
+
 /* UI jogo */
 .UI {
     display: flex;
